@@ -24,7 +24,7 @@ export default function App() {
     e.preventDefault();
     setStatus('Sending...');
     try {
-      const res = await fetch('http://localhost:5000/send-lead', {
+      const res = await fetch('https://fbs-consultancy-backend.onrender.com/send-lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form)
